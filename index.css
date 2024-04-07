@@ -75,3 +75,32 @@ ul li:hover{
   background-color: #d1d4a2;
   cursor: pointer;
 }
+
+.countdown-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+h3{
+  font-size: normal;
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.big-text{
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 1rem 1rem;
+}
+
+.countdown-el {
+text-align: center;
+}
+
+.countdown-el span{
+  font-size: 1.3rem;
+}
