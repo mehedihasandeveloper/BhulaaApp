@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Don't be a Bhulaa</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,35 +18,24 @@
 </head>
 
 <body>
-    <h3>Time Left</h1>
- 
-    <div class="container">
-        <div class="countdown-container">
-            <div class="countdown-el days-c">
-                <p class="big-text" id="days">0</p>
-                <span>days</span>
+
+
+        <div class="container">
+            <div class="button-container">
+                <button onclick="startClock()" class="btn2">Start</button>
+                <button onclick="stopClock()" class="btn3">Stop</button>
+                <button onclick="resetClock()" class="btn4">Reset</button>
             </div>
-            <div class="countdown-el hours-c">
-                <p class="big-text" id="hours">0</p>
-                <span>hours</span>
+            <div class="countdown-container">
+                <h3 id="time">00:00</h3>
             </div>
-            <div class="countdown-el mins-c">
-                <p class="big-text" id="mins">0</p>
-                <span>mins</span>
-            </div>
-            <div class="countdown-el seconds-c">
-                <p class="big-text" id="seconds">0</p>
-                <span>seconds</span>
-            </div>
-    
+            <input type="text" id="input-field" placeholder="To do">
+            <button id="add-button" class="btn">Add to list</button>
+            <ul id="shopping-list">
+            </ul>
+            <script src="index.js" type="module"></script>
+            <script src="script.js"></script>
         </div>
-        <!-- <img src="assets/bhulaa.png" alt="bhula_app"> -->
-        <input type="text" id="input-field" placeholder="To do">
-        <button id="add-button">Add to list</button>
-        <ul id="shopping-list">
-        </ul>
-        <script src="index.js" type="module"></script>
-    </div>
 </body>
 
 </html>
